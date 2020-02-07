@@ -1,0 +1,8 @@
+■Windows vim_plugin導入(KaoriYa)
+
+$vim/plugin配下に導入したいpluginを配置する
+※git clone ※※※
+
+
+runtimepathに導入したいpluginのパスを追加する方法もある
+例 :set runtimepath+=$HOME/.vim/plugin
