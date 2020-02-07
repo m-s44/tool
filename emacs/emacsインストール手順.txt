@@ -1,0 +1,51 @@
+■Windows10にemacsをインストール
+
+【1】
+NTEmacsの最新バイナリをダウンロード。
+http://ftp.gnu.org/pub/gnu/emacs/windows/
+
+※今回は26.3をダウンロード
+32bit emacs-26/emacs-26.3-i686.zip
+64bit emacs-26/emacs-26.3-x86_64.zip
+
+【2】
+【1】でダウンロードしたファイルを解凍、任意のフォルダに配置。
+※筆者はディレクトリ名emacsに編集してC:\emacsに配置しました
+
+【3】
+Windowsのホームディレクトリを設定
+
+Windowsはデフォルトでホームディレクトリが設定されていないため、
+設定する必要がある。
+ホームディレクトリを設定することで、
+emacsを起動すると、ホームディレクトリに
+設定ファイルを配置する.emacs.dフォルダが自動で作成されます。
+
+ホームディレクトリはユーザー環境変数に追加します。
+・変数名：HOME
+・値    ：任意のパス(C:\Users/ユーザー\や%HOMEPATH%など)
+環境変数の設定は下記URLを参照ください。
+https://www.tipsfound.com/windows10/11010
+
+【4】
+binフォルダに入っている、runemacs.exeを実行
+emacs起動とホームディレクトリに.emacs.dフォルダが作成されてればOK
+
+インストール完了です！
+
+
+
+■コマンドプロンプトからemacsを起動
+
+【1】
+システム環境変数Pathに emacsを設置したフォルダ\bin\
+環境変数の設定は下記URLを参照ください。
+https://www.tipsfound.com/windows10/11010
+
+【2】
+コマンドプロンプトで「emacs -nw」入力Enter
+
+【3】
+起動されれば完了！
+
+
