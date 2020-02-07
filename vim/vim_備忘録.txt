@@ -1,0 +1,14 @@
+■Vim(GVim)
+・キーマップの<Leader>
+<Leader>はデフォルトでは\(バックスラッシュ)
+
+・プラグインのhelp
+プラグインのhelpはruntimepath内のdocに配置する。
+Vim起動後、:helptags {配置したパス}を実行するとよい。
+
+・Vim起動時のエラーメッセージ表示
+:messages
+
+・コマンドラインにペースト
+:Ctr+R "
+/Ctr+R "
