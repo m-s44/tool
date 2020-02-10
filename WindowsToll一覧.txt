@@ -1,0 +1,48 @@
+■ブラウザ
+・Google Chrome
+・Fire Fox
+・Vivaldi
+・Opera
+
+■エディタ
+・KaoriYa Vim (Vim, gVim)
+・NTEmacs (Emacs)
+・Visual Studio Code
+・サクラエディタ
+・Mery
+
+■圧縮・解凍
+・7Zip
+
+■ファイル検索
+・Everything
+
+■ファイル削除
+・IObit Unlocker
+・BitKiller
+
+■ファイル比較
+・DF
+
+■ファイラー
+・QTTabBar
+・あふ
+
+■クリップボード
+・CLCL
+・pointClip
+
+■IME
+・Google日本語入力
+
+■バージョン管理
+・Git
+
+■Gif作成ツール
+・ScreenToGif
+
+■IME
+・Google日本語入力
+
+■画像編集・加工ソフトウェア
+・GIMP
