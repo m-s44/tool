@@ -8,6 +8,7 @@ Super(MacのCommand) => s-
 
 ・特殊キー
 SPC => Spaceキー
+RET => Enterキー
 
 ・共通
 ターミナル(コマンドプロンプト)からの起動 => emacs -nw(emacs -no-window-system)
@@ -23,6 +24,8 @@ Emacs終了 => C-x C-c
 システムコマンド => C-x
 
 行番号表示 => M-x linum-mode
+
+ローマ字かな変換モード切り替え => C-￥
 
 ・ファイル移動系
 上移動 => C-p
@@ -67,6 +70,8 @@ Emacs終了 => C-x C-c
 
 マークとリージョン => C-SPC
 
+矩形選択 => C-x SPC
+
 コピー => M-w
 
 カット => C-w
@@ -87,6 +92,8 @@ Emacs終了 => C-x C-c
 ファイルに別ファイルを挿入する => C-x i
 
 ファイル(バッファ)を切り替える => C-x b
+
+ファイルの文字コード・改行コード変更する => C-x RET f
 
 ファイル(バッファ)を消去する => C-x k
 
