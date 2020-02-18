@@ -29,8 +29,8 @@
 ・あふ
 
 ■クリップボード
-・CLCL
 ・pointClip
+・clibor
 
 ■IME
 ・Google日本語入力
