@@ -43,8 +43,13 @@ set hidden
 set statusline=%F%m%r%h%w%=\
 
 "ウィンドウの初期サイズを設定する
-set lines=150 "縦
-set columns=350 "横
+"set lines=150 "縦
+"set columns=350 "横
+"起動時にウィンドウ全画面表示
+au GUIEnter * simalt ~x
+
+"Beep音を消す
+set visualbell t_vb=
 
 "-----------------
 
@@ -61,6 +66,10 @@ set directory=D:/User/xqxx44/vimbackup
 
 "アンドゥファイルをディレクトリを指定する
 set undodir=D:/User/xqxx44/vimbackup
+
+"viminfoファイルの出力先を設定する
+set viminfo+=nD:/User/xqxx44/vimbackup/viminfo.txt
+
 "-----------------
 
 "-----------------

@@ -46,6 +46,9 @@ set statusline=%F%m%r%h%w%=\
 set lines=150 "縦
 set columns=350 "横
 
+" Beep音を消す
+set visualbell t_vb=
+
 "-----------------
 
 "-----------------
@@ -61,6 +64,10 @@ set directory=D:/User/xqxx44/vimbackup
 
 "アンドゥファイルをディレクトリを指定する
 set undodir=D:/User/xqxx44/vimbackup
+
+"viminfoファイルの出力先を設定する
+set viminfo+=nD:/User/xqxx44/vimbackup/viminfo.txt
+
 "-----------------
 
 "-----------------
@@ -148,4 +155,7 @@ syntax enable
 
 " プラグインの有効化 ファイル形式毎のインデントロードを有効化
 filetype plugin indent on
+
+" helpの言語日本語を優先に
+set helplang=ja,en
 
