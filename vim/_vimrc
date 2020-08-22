@@ -43,8 +43,8 @@ set hidden
 set statusline=%F%m%r%h%w%=\
 
 "ウィンドウの初期サイズを設定する
-set lines=150 "縦
-set columns=350 "横
+"set lines=150 "縦
+"set columns=350 "横
 
 " Beep音を消す
 set visualbell t_vb=
@@ -140,15 +140,13 @@ set hlsearch
 "カラースキーム
 "-----------------
 "hybridスキーム設定
-" set background=light
+" set background=dark
 " colorschem morning
-" colorschem shirotelin
+colorschem shirotelin
 " syntax on
 "-----------------
 
-
 " $VIMRUNTIME(runtimepath)にパスを追加
-"set runtimepath+=C:/vim/plugins/vim-polyglot
 
 " 現在の色を変更しない
 syntax enable
