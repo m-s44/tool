@@ -39,12 +39,12 @@ x○○にはWindowsが32bitならx32、64bitならx64を選択する
 設定ファイル：httpd.conf
 
 ・AddHandlerのphp-scriptの有効化
-AddHandler phpx-script .php
-※ xにはPHPのバージョンを設定、PHP7系なら7、5系なら5
+AddHandler php「x」-script .php
+※ 「x」にはPHPのバージョンを設定、PHP7系なら7、5系なら5
 
 ・PHPモジュール先の設定
-LoadModule phpx_module "/配置したディレクトリパス/phpxapache2_4.dll"
-※ xにはPHPのバージョンを設定、モジュールのパスを間違えないこと
+LoadModule php「x」_module "/配置したディレクトリパス/phpxapache2_4.dll"
+※ 「x」にはPHPのバージョンを設定、モジュールのパスを間違えないこと
 例：LoadModule php7_module "C:/php/php7.2.4/phpxapache2_4.dll"
 
 ・php.iniの設定ファイル場所を指定(最終行に追加)
