@@ -1,0 +1,77 @@
+環境
+・OS Windows 10 Home 64bit
+
+
+
+【0】
+Microsoft Visual C++ 再頒布可能パッケージをインストール
+・64bit https://aka.ms/vs/16/release/VC_redist.x64.exe
+・32bit https://aka.ms/vs/16/release/VC_redist.x86.exe
+
+【1】Apacheのダウンロード
+下記URLからダウンロード
+https://www.apachelounge.com/download/
+64bit
+  Apache 2.4.41 Win64
+32bit
+  Apache 2.4.41 Win32
+
+
+以降の手順は解凍したファイルに配置されている、
+ReadMe.txtの手順に沿って進めております。
+
+
+【2】解凍したファイルを任意のフォルダに配置
+解凍したファイルを任意のフォルダに配置
+※例
+解凍したファイル：Apache24\
+配置場所：C:\Apache
+C:\Apache\Apache24\
+
+【4】システム環境変数にPATHを通す
+C:\Apache\Apache24\bin\
+
+【5】configファイルを環境に合わせて設定
+[注意]
+設定ファイルを編集するときは、バックアップを取っておきます。
+
+設定ファイル場所：C:\Apache\Apache24\conf\httpd.conf
+37行目くらい
+[修正前] Define SRVROOT "c:/Apache24"
+[修正後] Define SRVROOT "c:/Apache/Apache24"
+
+227行目くらい
+[修正前] # ServerName www.example.com:80
+[修正後] ServerName localhost:80
+
+
+【6】編集したconfigでテスト
+コマンドプロンプトを管理者として実行する
+Windowsキータッチ→cmdで検索→右クリック→管理者として実行をクリック
+↓↓↓
+httpd.exe enter apache起動
+↓↓↓
+ブラウザでURLに「localhost」を入力してEnter
+↓↓↓
+「It Works!」と表示されたらOK！
+↓↓↓
+コマンドプロンプトに戻り、Ctr+cで停止
+
+【7】Apacheをインストール
+コマンドプロンプトを管理者として実行する
+
+Windowsキータッチ→cmdで検索→右クリック→管理者として実行をクリック
+↓↓↓
+httpd.exe -k install
+※このコマンドでWindowsのサービスに登録してくれます
+
+【おまけ】
+ApacheMonitorをスタートアップに設定
+
+bin/配下にある「ApacheMonitor.exe」のショートカットを作成
+↓↓↓
+エクスプローラーのアドレスバーに「shell:startup」で検索
+↓↓↓
+作成したショートカットを張り付けて完了
+
+PC起動時にApacheMonitorが起動されます。

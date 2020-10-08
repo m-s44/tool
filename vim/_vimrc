@@ -43,8 +43,11 @@ set hidden
 set statusline=%F%m%r%h%w%=\
 
 "ウィンドウの初期サイズを設定する
-set lines=150 "縦
-set columns=350 "横
+"set lines=150 "縦
+"set columns=350 "横
+
+" Beep音を消す
+set visualbell t_vb=
 
 "-----------------
 
@@ -61,6 +64,10 @@ set directory=D:/User/xqxx44/vimbackup
 
 "アンドゥファイルをディレクトリを指定する
 set undodir=D:/User/xqxx44/vimbackup
+
+"viminfoファイルの出力先を設定する
+set viminfo+=nD:/User/xqxx44/vimbackup/viminfo.txt
+
 "-----------------
 
 "-----------------
@@ -68,7 +75,7 @@ set undodir=D:/User/xqxx44/vimbackup
 "-----------------
 "空白文字の可視化
 set list
-set listchars=tab:>-,trail:-,eol:↲,extends:>,precedes:<,nbsp:%
+set listchars=tab:>-,space:-,trail:-,eol:↲,extends:>,precedes:<,nbsp:%
 
 "自動コメント挿入オフ
 augroup auto_comment_off
@@ -133,19 +140,20 @@ set hlsearch
 "カラースキーム
 "-----------------
 "hybridスキーム設定
-" set background=light
+" set background=dark
 " colorschem morning
-" colorschem shirotelin
+colorschem shirotelin
 " syntax on
 "-----------------
 
-
 " $VIMRUNTIME(runtimepath)にパスを追加
-"set runtimepath+=C:/vim/plugins/vim-polyglot
 
 " 現在の色を変更しない
 syntax enable
 
 " プラグインの有効化 ファイル形式毎のインデントロードを有効化
 filetype plugin indent on
+
+" helpの言語日本語を優先に
+set helplang=ja,en
 

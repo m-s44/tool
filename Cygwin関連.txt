@@ -1,0 +1,7 @@
+cygwin
+
+# cygwinシステムの.bashrcの場所
+/etc/skel/
+
+
+

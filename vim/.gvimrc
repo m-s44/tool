@@ -59,7 +59,7 @@ set undodir=$HOME/vimbackup
 "-----------------
 "空白文字の可視化
 set list
-set listchars=tab:>-,trail:-,eol:↵,extends:>,precedes:<,nbsp:%
+set listchars=tab:>-,space:-,trail:-,eol:↲,extends:>,precedes:<,nbsp:%
 
 "自動コメント挿入オフ
 augroup auto_comment_off

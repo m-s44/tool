@@ -1,0 +1,9 @@
+■Windows10
+# 設定ファイル(settings.json)の場所
+HOME\AppData\Roaming\Code\User\
+
+
+# 日本語解析機能が実装されていないため、日本語の単語でも単語移動ができるように設定
+https://qiita.com/EbXpJ6bp/items/e6a0ed52bdcb60bfd145
+"editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。「」【】『』（）！？　てにをはがのともへでや"
+
