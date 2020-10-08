@@ -1,24 +1,46 @@
-#デフォルトのエディタMacVimに設定
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+# To the extent possible under law, the author(s) have dedicated all
+# copyright and related and neighboring rights to this software to the
+# public domain worldwide. This software is distributed without any warranty.
+# You should have received a copy of the CC0 Public Domain Dedication along
+# with this software.
+# If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-#エイリアス設定
-#viコマンドを入力した時、vimで開く。ファイルの言語を日本語、文字コードをUTF-8で開く
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+# base-files version 4.3-2
 
-#vimコマンドを入力した時、vimで開く。ファイルの言語を日本語、文字コードをUTF-8で開く
-alias vim='env_LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+# ~/.bashrc: executed by bash(1) for interactive shells.
 
-#grepと入力するとオプション--colorを入力した時と同じになる(一致した文字に色がつく)
-alias grep='grep --color'
+# The latest version as installed by the Cygwin Setup program can
+# always be found at /etc/defaults/etc/skel/.bashrc
 
-#vimでファイルを開く
-alias gvim='open -a /Applications/MacVim.app'
+# Modifying /etc/skel/.bashrc directly will prevent
+# setup from updating it.
 
-#ls -laをlsで実行する
-alias ls='ls -laG'
+# The copy in your home directory (~/.bashrc) is yours, please
+# feel free to customise it to create a shell
+# environment to your liking.  If you feel a change
+# would be benifitial to all, please feel free to send
+# a patch to the cygwin mailing list.
 
-#shutdownコマンド
-alias shutdown='sudo shutdown'
+# User dependent .bashrc file
 
-#findコマンド
-alias find='sudo find'
+# If not running interactively, don't do anything
+[[ "$-" != *i* ]] && return
+
+
+
+# Aliases
+#
+# Some people use a different file for aliases
+# if [ -f "${HOME}/.bash_aliases" ]; then
+#   source "${HOME}/.bash_aliases"
+# fi
+
+alias ls='ls -la --color=auto'
+
+alias grep='grep --color=auto'
+
+alias rm='rm -ri'
+
+alias cp='cp -i'
+
+alias mv='mv -i'
