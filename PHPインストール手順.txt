@@ -27,13 +27,30 @@ x○○にはWindowsが32bitならx32、64bitならx64を選択する
 
 
 ■PHPの設定
-・拡張DLLのファイル場所を設定
+設定ファイル：php.ini
+
+・拡張機能DLLのファイル場所を設定
+####
+例
+extension_dir = "C:/php/php-5.6.9/ext"
+; On windows:
+extension_dir = "C:/php/php-5.6.9/ext"
+####
 
 ・PHP拡張機能の有効化
+####
+extension=有効化する拡張機能
+####
 
 ・タイムゾーンの設定
+####
+[Date]
+; Defines the default timezone used by the date functions
+; http://php.net/date.timezone
+date.timezone = Asia/Tokyo
+####
 
-・システム環境変数にphpのPATHを通す
+・Windowsシステム環境変数に利用したいphpのPATHを通す
 
 ■Apacheの設定
 設定ファイル：httpd.conf
