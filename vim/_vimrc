@@ -54,6 +54,7 @@ set wildmenu
 
 " helpの言語日本語を優先に
 set helplang=ja,en
+
 "-----------------
 
 

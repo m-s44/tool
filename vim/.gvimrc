@@ -34,8 +34,16 @@ set hidden
 "set statusline=%F%m%r%h%w%=\
 
 "ウィンドウの初期サイズを設定する
-set lines=100 "縦
-set columns=250 "横
+"set lines=100 "縦
+"set columns=250 "横
+"起動時にウィンドウ全画面表示
+"au GUIEnter * simalt ~x
+
+"Beep音を消す
+set visualbell t_vb=
+
+"helpを日本語化
+set helplang=ja,en
 
 "-----------------
 
