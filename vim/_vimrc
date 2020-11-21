@@ -46,10 +46,18 @@ set statusline=%F%m%r%h%w%=\
 "set lines=150 "縦
 "set columns=350 "横
 
-" Beep音を消す
+"Beep音を消す
 set visualbell t_vb=
 
+"コマンドラインでのtab補完
+set wildmenu
+
+" helpの言語日本語を優先に
+set helplang=ja,en
+
 "-----------------
+
+
 
 "-----------------
 "ファイル関係
@@ -69,6 +77,8 @@ set undodir=D:/User/xqxx44/vimbackup
 set viminfo+=nD:/User/xqxx44/vimbackup/viminfo.txt
 
 "-----------------
+
+
 
 "-----------------
 "画面表示関係
@@ -95,6 +105,8 @@ set virtualedit=block
 "augroup END
 "-----------------
 
+
+
 "-----------------
 "タブ関係
 "-----------------
@@ -116,6 +128,8 @@ set softtabstop=0
 set nosmartindent
 "-----------------
 
+
+
 "-----------------
 "検索関係
 "-----------------
@@ -136,24 +150,39 @@ set hlsearch
 
 "-----------------
 
+
+
 "-----------------
 "カラースキーム
 "-----------------
-"hybridスキーム設定
+" syntax on
 " set background=dark
 " colorschem morning
 colorschem shirotelin
-" syntax on
-"-----------------
-
-" $VIMRUNTIME(runtimepath)にパスを追加
-
 " 現在の色を変更しない
 syntax enable
+"-----------------
 
-" プラグインの有効化 ファイル形式毎のインデントロードを有効化
+
+
+"-----------------
+"プラグイン
+"-----------------
+"プラグインの有効化 ファイル形式毎のインデントロードを有効化
+syntax on
 filetype plugin indent on
 
-" helpの言語日本語を優先に
-set helplang=ja,en
+"プラグイン用のディレクトリにインストールしたしたプラグインのディレクトリを追加する
+let paths = split(glob($HOME."/.vim/plugins/*"), "\n")
+let runtimepath = ""
+for path in paths
+  if isdirectory(path)
+    let &runtimepath = &runtimepath.",".path
+  endif
+endfor
+unlet paths
+
+
+
+
 

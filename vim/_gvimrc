@@ -51,7 +51,14 @@ au GUIEnter * simalt ~x
 "Beep音を消す
 set visualbell t_vb=
 
+"コマンドラインでのtab補完
+set wildmenu
+
+" helpの言語日本語を優先に
+set helplang=ja,en
 "-----------------
+
+
 
 "-----------------
 "ファイル関係
@@ -71,6 +78,8 @@ set undodir=D:/User/xqxx44/vimbackup
 set viminfo+=nD:/User/xqxx44/vimbackup/viminfo.txt
 
 "-----------------
+
+
 
 "-----------------
 "画面表示関係
@@ -97,6 +106,8 @@ augroup highlightIdegraphicSpace
 augroup END
 "-----------------
 
+
+
 "-----------------
 "タブ関係
 "-----------------
@@ -118,6 +129,8 @@ set softtabstop=0
 set nosmartindent
 "-----------------
 
+
+
 "-----------------
 "検索関係
 "-----------------
@@ -138,6 +151,8 @@ set hlsearch
 
 "-----------------
 
+
+
 "-----------------
 "カラースキーム
 "-----------------
@@ -146,14 +161,16 @@ set hlsearch
 "colorschem torte
 colorschem shirotelin
 "syntax on
+"現在の色を変更しない
+syntax enable
 "-----------------
 
 
-" $VIMRUNTIME(runtimepath)にパスを追加
 
-" 現在の色を変更しない
-syntax enable
-
+"-----------------
+"プラグイン
+"-----------------
 " プラグインの有効化 ファイル形式のインデントロードを有効化
+syntax on
 filetype plugin indent on
 

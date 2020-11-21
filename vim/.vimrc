@@ -33,6 +33,12 @@ set hidden
 "現在編集中のファイルのフルパスを表示する
 "set statusline=%F%m%r%h%w%=\
 
+"Beep音を消す
+set visualbell t_vb=
+
+"helpを日本語化
+set helplang=ja,en
+
 "-----------------
 
 "-----------------
